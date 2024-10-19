@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 :root {
   --Green: hsl(75, 94%, 57%);
   --White: hsl(0, 0%, 100%);
@@ -15,58 +16,59 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
   background-color: var(--Grey_900);
   min-height: 100vh;
   display: grid;
   place-content: center;
 }
+
 #main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 20px;
   background: var(--Grey_800);
   width: 25rem;
   border-radius: 8px;
+  padding: 20px; /* Added padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
 #main .img {
   aspect-ratio: 1;
   margin-top: 20px;
-
   width: 100%;
 }
+
 #main .img img {
   width: 22%;
   height: auto;
   border-radius: 50%; /* Optional for round images */
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: var(--White);
   border-radius: 20px;
-  border-color: var(--Grey_700);
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 20px 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px 12px; /* Simplified margin */
   background-color: var(--Grey_700);
   border: none;
-  margin-bottom: 12px;
   text-decoration: none;
+  transition: background-color 0.3s ease-in-out, opacity 0.15s ease-in-out; /* Unified transition */
 }
+
 a:active {
-  transition: all 0.15s ease-in-out;
   opacity: 0.8;
 }
+
 a:hover {
   background-color: var(--Green);
-  transition: all 0.3s ease-in-out;
 }
 
 #main .profile h1 {
@@ -74,6 +76,7 @@ a:hover {
   font-size: 25px;
   margin-top: 20px;
 }
+
 #main .profile h2 {
   color: var(--Green);
   font-size: 15px;
@@ -83,10 +86,7 @@ a:hover {
 #main .bio {
   color: var(--White);
   font-size: 15px;
-  margin-top: 22px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 22px 20px 10px; /* Simplified margin */
 }
 
 @media (max-width: 550px) {
